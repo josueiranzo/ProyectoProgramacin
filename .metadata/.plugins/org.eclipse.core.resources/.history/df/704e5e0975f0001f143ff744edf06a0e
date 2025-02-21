@@ -25,6 +25,3 @@ public class GreenAndClick {
 	
 	System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
 	gestor.ordenarPorPrecio(productosDisponibles);
-	
-	System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
-	gestor.ordenarPorPrecioDescendente(productosDisponibles);
