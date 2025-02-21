@@ -22,6 +22,3 @@ public class GreenAndClick {
 	System.out.println("Usuario selecciona buscar por origen");
 	String origenBusqueda = "Andorra"; 
 	gestor.buscarPorOrigen(productosDisponibles, origenBusqueda);
-	
-	System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
-	gestor.ordenarPorPrecio(productosDisponibles);
