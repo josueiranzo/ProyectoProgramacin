@@ -12,13 +12,5 @@ public class GreenAndClick {
         Carrito carrito = new Carrito();
         GestorDeAplicacion gestor = new GestorDeAplicacion();
     }
-}	
-	System.out.println("Buenos días! ¿Qué quieres hacer hoy?");
+}
 
-	System.out.println("Usuario selecciona buscar por nombre");
-	String nombreBusqueda = "Juana"; 
-	gestor.buscarPorNombre(productosDisponibles, nombreBusqueda);
-	
-	System.out.println("Usuario selecciona buscar por origen");
-	String origenBusqueda = "Andorra"; 
-	gestor.buscarPorOrigen(productosDisponibles, origenBusqueda);
