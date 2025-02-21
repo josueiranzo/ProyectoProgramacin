@@ -8,7 +8,7 @@ public class GestorDeAplicacion {
             }
         }
     }
-
+}
 	public void buscarPorOrigen(Producto[] productos, String origen) {
     for (int i = 0; i < productos.length; i++) {
         if (productos[i].obtenerOrigen().toLowerCase().equals(origen.toLowerCase())) {
@@ -44,10 +44,5 @@ public class GestorDeAplicacion {
 	    System.out.println("Productos ordenados por precio de mayor a menor:");
 	    mostrarProductos(productos);
 	}
-	public void mostrarProductos(Producto[] productos) {
-	    for (int i = 0; i < productos.length; i++) {
-	        System.out.println("Producto: " + productos[i].obtenerNombre() + " - Precio: " + productos[i].obtenerPrecio());
-	    }
-	}
-	}
+
 
