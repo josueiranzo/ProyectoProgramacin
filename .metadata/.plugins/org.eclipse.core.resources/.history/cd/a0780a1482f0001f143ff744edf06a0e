@@ -1,34 +1,19 @@
 package pac;
 
 public class GestorDeAplicacion {
-    
     public void buscarPorNombre(Producto[] productos, String nombre) {
-        boolean encontrado = false;
         for (int i = 0; i < productos.length; i++) {
             if (productos[i].obtenerNombre().toLowerCase().contains(nombre.toLowerCase())) {
-                System.out.println("Producto encontrado: " + productos[i].obtenerNombre() + 
-                                   " - Origen: " + productos[i].obtenerOrigen() + 
-                                   " - Precio: $" + productos[i].obtenerPrecio());
-                encontrado = true;
+                System.out.println("Producto encontrado: " + productos[i].obtenerNombre());
             }
-        }
-        if (!encontrado) {
-            System.out.println("No se encontraron productos con ese nombre.");
         }
     }
 
     public void buscarPorOrigen(Producto[] productos, String origen) {
-        boolean encontrado = false;
         for (int i = 0; i < productos.length; i++) {
             if (productos[i].obtenerOrigen().toLowerCase().equals(origen.toLowerCase())) {
-                System.out.println("Producto encontrado: " + productos[i].obtenerNombre() + 
-                                   " - Origen: " + productos[i].obtenerOrigen() + 
-                                   " - Precio: $" + productos[i].obtenerPrecio());
-                encontrado = true;
+                System.out.println("Producto encontrado: " + productos[i].obtenerNombre());
             }
-        }
-        if (!encontrado) {
-            System.out.println("No se encontraron productos de ese origen.");
         }
     }
 
@@ -64,9 +49,7 @@ public class GestorDeAplicacion {
 
     public void mostrarProductos(Producto[] productos) {
         for (int i = 0; i < productos.length; i++) {
-            System.out.println("Producto: " + productos[i].obtenerNombre() + 
-                               " - Origen: " + productos[i].obtenerOrigen() + 
-                               " - Precio: $" + productos[i].obtenerPrecio());
+            System.out.println("Producto: " + productos[i].obtenerNombre() + " - Precio: " + productos[i].obtenerPrecio());
         }
     }
 }
