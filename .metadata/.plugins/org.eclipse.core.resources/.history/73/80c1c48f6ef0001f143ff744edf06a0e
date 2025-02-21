@@ -9,10 +9,3 @@ public class GestorDeAplicacion {
         }
     }
 }
-public void buscarPorOrigen(Producto[] productos, String origen) {
-    for (int i = 0; i < productos.length; i++) {
-        if (productos[i].obtenerOrigen().toLowerCase().equals(origen.toLowerCase())) {
-            System.out.println("Producto encontrado: " + productos[i].obtenerNombre());
-        }
-    }
-}
