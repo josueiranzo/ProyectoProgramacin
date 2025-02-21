@@ -35,10 +35,3 @@ public class Carrito {
         }
         return total;
     }
-    public void mostrarCarrito() {
-        for (int i = 0; i < contadorCarrito; i++) {
-            System.out.println("Producto: " + productos[i].obtenerNombre() + " - Cantidad: " + cantidades[i]);
-        }
-        
-    }
-}
