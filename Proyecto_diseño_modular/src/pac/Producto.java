@@ -1,0 +1,8 @@
+package pac;
+
+public class Producto {
+	 	String nombre;
+	    String origen;
+	    double precio;
+
+}
