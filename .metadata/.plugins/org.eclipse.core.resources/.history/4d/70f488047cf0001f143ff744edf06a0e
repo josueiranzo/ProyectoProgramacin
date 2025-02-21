@@ -30,6 +30,3 @@ public class GreenAndClick {
 			gestor.ordenarPorPrecioDescendente(productosDisponibles);
 			System.out.println("Usuario selecciona varios productos para comprar");
 			carrito.agregarProducto(productosDisponibles[1], 3);  carrito.agregarProducto(productosDisponibles[3], 1);  carrito.agregarProducto(productosDisponibles[2], 2.5);  
-			
-			System.out.println("Usuario elimina el segundo producto de su carrito");
-			carrito.eliminarProducto(1);
