@@ -9,22 +9,24 @@ public class GreenAndClick {
             new Producto("El oro verde", "Palestina", 1.33)
         };
 
-        Carrito carrito = new Carrito();
-        GestorDeAplicacion gestor = new GestorDeAplicacion();
-    }
-}	
-	System.out.println("Buenos días! ¿Qué quieres hacer hoy?");
-
-	System.out.println("Usuario selecciona buscar por nombre");
-	String nombreBusqueda = "Juana"; 
-	gestor.buscarPorNombre(productosDisponibles, nombreBusqueda);
-	
-	System.out.println("Usuario selecciona buscar por origen");
-	String origenBusqueda = "Andorra"; 
-	gestor.buscarPorOrigen(productosDisponibles, origenBusqueda);
-	
-	System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
-	gestor.ordenarPorPrecio(productosDisponibles);
-	
-	System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
-	gestor.ordenarPorPrecioDescendente(productosDisponibles);
+	        Carrito carrito = new Carrito();
+	        GestorDeAplicacion gestor = new GestorDeAplicacion();
+	    }
+	}	
+			System.out.println("Buenos días! ¿Qué quieres hacer hoy?");
+		
+			System.out.println("Usuario selecciona buscar por nombre");
+			String nombreBusqueda = "Juana"; 
+			gestor.buscarPorNombre(productosDisponibles, nombreBusqueda);
+			
+			System.out.println("Usuario selecciona buscar por origen");
+			String origenBusqueda = "Andorra"; 
+			gestor.buscarPorOrigen(productosDisponibles, origenBusqueda);
+			
+			System.out.println("Usuario selecciona ordenar por precio de menor a mayor");
+			gestor.ordenarPorPrecio(productosDisponibles);
+			
+			System.out.println("Usuario selecciona ordenar por precio de mayor a menor");
+			gestor.ordenarPorPrecioDescendente(productosDisponibles);
+			System.out.println("Usuario selecciona varios productos para comprar");
+			carrito.agregarProducto(productosDisponibles[1], 3);  carrito.agregarProducto(productosDisponibles[3], 1);  carrito.agregarProducto(productosDisponibles[2], 2.5);  
